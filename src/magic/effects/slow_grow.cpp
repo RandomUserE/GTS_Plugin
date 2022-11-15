@@ -40,7 +40,7 @@ namespace Gts {
 			bonus = get_target_scale(caster) * 0.25 + 0.75;
 		}
 
-		Grow(caster, 20, power * bonus);
+		Grow(caster,power * bonus, 0.0);
 		GrowthTremorManager::GetSingleton().CallRumble(caster, caster, 0.30);
 		//log::info("Slowly Growing, actor: {}", caster->GetDisplayFullName());
 	}
